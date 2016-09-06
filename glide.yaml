@@ -1,0 +1,3 @@
+package: github.com/nii236/catcsv
+import:
+- package: github.com/olekukonko/tablewriter
