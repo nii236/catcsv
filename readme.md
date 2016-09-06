@@ -11,12 +11,12 @@ go get github.com/nii236/catcsv
 ## Usage
 
 ```
-catcsv -path ./yourfile.csv
+catcsv ./yourfile.csv
 ```
 
 ## Example output
 ```
-$ catcsv -path BITCOIN-BITSTAMPUSD.csv | head -n10
+$ catcsv BITCOIN-BITSTAMPUSD.csv | head -n10
 +------------+---------+---------+--------+---------+-----------------+-------------------+-----------------+
 |    DATE    |  OPEN   |  HIGH   |  LOW   |  CLOSE  |  VOLUME (BTC)   | VOLUME (CURRENCY) | WEIGHTED PRICE  |
 +------------+---------+---------+--------+---------+-----------------+-------------------+-----------------+

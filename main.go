@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/csv"
-	"flag"
 	"io"
 	"log"
 	"os"
@@ -10,16 +9,11 @@ import (
 	"github.com/olekukonko/tablewriter"
 )
 
-var path string
-
-func init() {
-	flag.StringVar(&path, "path", "./example.csv", "Path to the CSV file")
-	flag.Parse()
-}
 func main() {
-	if path == "" {
-		log.Fatal("No path specified")
+	if len(os.Args) != 2 {
+		log.Fatal("Usage: catcsv <pathtocsv>")
 	}
+	path := os.Args[1]
 	fileReader, err := os.Open(path)
 	if err != nil {
 		log.Fatal("Could not open file:", err)
