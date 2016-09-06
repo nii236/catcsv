@@ -21,6 +21,7 @@ func main() {
 
 	table := tablewriter.NewWriter(os.Stdout)
 	table.SetAlignment(tablewriter.ALIGN_CENTER)
+	table.SetAutoWrapText(true)
 	r := csv.NewReader(fileReader)
 	i := 0
 	for {

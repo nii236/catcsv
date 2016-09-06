@@ -1,5 +1,7 @@
 # catcsv
 
+![](static/cat.png)
+
 I got annoyed using `cat` to inspect CSVs with no formatting. So I made `catcsv`!
 
 ## Installation
